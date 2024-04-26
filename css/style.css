@@ -1,0 +1,316 @@
+/* oswald-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/oswald-v53-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald-v53-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --white: #fff;
+  --firm: #21062a;
+  --akcent: #5a0d67;
+  --grey: #c4c4c4;
+  --dark: #2c2b2b;
+  --oswald: "Oswald", Helvetica, sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+* {
+  /*завжди пишеться в код  */
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h6 {
+  margin: 0;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* щоб правилтно наслідувались властивості від батьків */
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  /* щоб наслідувався колір зсилок від батьків*/
+  text-decoration: none;
+  /* підкреслення */
+  display: inline-block;
+  cursor: pointer;
+}
+.big-container {
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body {
+  color: var(--dark);
+  font-family: var(--oswald);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.1;
+  scroll-behavior: smooth;
+  position: relative;
+}
+.header__image {
+  position: absolute;
+  background-color: var(--firm);
+  background-image: url(../images/hero-fon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 700px;
+  width: 100vw;
+  z-index: -1;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 47px;
+  padding-bottom: 105px;
+}
+.header__telefon {
+  color: var(--white);
+
+  font-family: var(--oswald);
+  font-size: 36px;
+
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.hero {
+  color: #fff;
+}
+.hero__soc-icon {
+  width: 25px;
+  height: 25px;
+}
+.soc-icon:hover path {
+  fill: var(--dark);
+}
+.hero__title {
+  font-family: var(--oswald);
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.hero__subtitle {
+  font-family: var(--oswald);
+  font-size: 36px;
+
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.hero__text {
+  margin-bottom: 30px;
+}
+
+.hero__btn {
+  padding: 14px 54px;
+  border: 1px solid var(--akcent);
+  background-color: var(--akcent);
+  font-family: var(--oswald);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--white);
+  transition: all 0.5s ease;
+}
+.hero__btn:hover {
+  color: var(--akcent);
+  background-color: var(--white);
+}
+.hero__social {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 66px;
+  column-gap: 10px;
+  padding-top: 70px;
+}
+.hero__bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 100px;
+}
+.services__title {
+  font-family: var(--oswald);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  position: relative;
+  color: var(--firm);
+  margin-bottom: 50px;
+}
+.services__title::after {
+  content: "";
+  position: absolute;
+  bottom: 40%;
+
+  left: 280px;
+  height: 3px;
+  width: 80px;
+  background-color: var(--firm);
+}
+
+.services__wrapper-left {
+  max-width: 504px;
+}
+.services__wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 100px;
+  column-gap: 96px;
+}
+.services__subtitle {
+  color: var(--akcent);
+  margin-bottom: 12px;
+}
+.top {
+  margin-bottom: 12px;
+}
+.bottom {
+  margin-bottom: 69px;
+}
+.down {
+  margin-bottom: 50px;
+}
+.services__wrapper-right {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.services__card-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid var(--grey);
+  width: 450px;
+}
+.card__number {
+  font-family: var(--oswald);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--grey);
+  transform: rotateZ(-90deg);
+  margin: 20px;
+}
+.services__card-container:hover {
+  border: 1px solid var(--akcent);
+  width: 500px;
+}
+.services__card-container:hover .card__title,
+.services__card-container:hover .card__number {
+  color: var(--akcent);
+}
+.card__texts {
+  margin-left: 20px;
+}
+.why__wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  column-gap: 95px;
+  margin-bottom: 100px;
+}
+.why__contant {
+}
+.why__title {
+  color: var(--firm);
+  font-family: var(--oswald);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 50px;
+}
+.why__title::after {
+  content: "";
+  position: absolute;
+  bottom: 40%;
+  left: 270px;
+  height: 3px;
+  width: 80px;
+  background-color: var(--firm);
+}
+.why__fon-wrapper {
+  background-color: var(--firm);
+  color: #fff;
+  min-width: 785px;
+  padding-left: 185px;
+}
+.why__number {
+  padding-top: 20px;
+  font-family: var(--oswald);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.why__subtitle {
+  font-family: var(--oswald);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1, 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.why__text {
+  font-family: var(--oswald);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--grey);
+  max-width: 316px;
+}
+.why-vidstup {
+  padding-bottom: 45px;
+}
+.
