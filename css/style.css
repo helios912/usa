@@ -313,4 +313,74 @@ body {
 .why-vidstup {
   padding-bottom: 45px;
 }
-.
+.slider__container {
+  margin-bottom: 100px;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+.slider__slide {
+  border: 1px solid var(--grey);
+  margin: 0 7px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.slider__slide:hover {
+  background-color: var(--akcent);
+  color: #fff;
+  border-color: var(--akcent);
+}
+.slider__foto {
+  padding: 7px 4px 23px 4px;
+  width: 380px;
+  height: 250px;
+}
+.carusele__title {
+  font-family: var(--oswald);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  position: relative;
+  color: var(--firm);
+  margin-bottom: 56px;
+}
+.carusele__title::after {
+  content: "";
+  position: absolute;
+  bottom: 40%;
+  left: 490px;
+  height: 3px;
+  width: 80px;
+  background-color: var(--firm);
+}
+
+.slider__title {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.slider__text {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 11px;
+}
+.slider__container .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  column-gap: 20px;
+}
+.slider__container .slick-dots button {
+  font-size: 0;
+  background-color: var(--grey);
+  width: 50px;
+  height: 1px;
+  border: none;
+}
+.slider__container .slick-active button {
+  background-color: var(--akcent);
+  height: 3px;
+}
