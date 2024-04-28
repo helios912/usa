@@ -1,4 +1,12 @@
 $(function () {
+  $(function () {
+    $(".burger__menu").on("click", function () {
+      $(".menu").addClass("active");
+    });
+    $(".close-btn").on("click", function () {
+      $(".menu").removeClass("active");
+    });
+  });
   $(".slider__container").slick({
     dots: true,
     speed: 300,
